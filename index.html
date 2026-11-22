@@ -773,142 +773,142 @@
 
     // ==================== DATA: 28 ARABIC LETTERS ====================
     const LETTERS = [
-      { id: 1, arName: 'أَلِف', char: 'ا', name: 'アリフ', romaji: 'Alif (ā / a)', sound: 'アー', nonConn: true,
+      { id: 1, mp3: '1_alif.mp3', arName: 'أَلِف', char: 'ا', name: 'アリフ', romaji: 'Alif (ā / a)', sound: 'アー', nonConn: true,
         forms: { iso: 'ا', init: 'ا', med: 'ـا', fin: 'ـا' },
         tip: '長い「アー」の音や、語頭の母音の台座になります。左隣とはつなぎません。',
         stroke: '上から下へまっすぐ1本の縦線を引きます。',
         exAr: 'أَسَد', exKana: 'アサド', exJp: 'ライオン' },
-      { id: 2, arName: 'بَاء', char: 'ب', name: 'バー', romaji: 'Bā (b)', sound: 'ブ', nonConn: false,
+      { id: 2, mp3: '2_baa.mp3', arName: 'بَاء', char: 'ب', name: 'バー', romaji: 'Bā (b)', sound: 'ブ', nonConn: false,
         forms: { iso: 'ب', init: 'بـ', med: 'ـبـ', fin: 'ـب' },
         tip: '日本語のバ行と同じ「b」の音。お皿の下に点が1つ！',
         stroke: '右から左へ浅いお皿を描き、下に点を1つ打ちます。',
         exAr: 'بَاب', exKana: 'バーブ', exJp: 'ドア' },
-      { id: 3, arName: 'تَاء', char: 'ت', name: 'ター', romaji: 'Tā (t)', sound: 'トゥ', nonConn: false,
+      { id: 3, mp3: '3_taa.mp3', arName: 'تَاء', char: 'ت', name: 'ター', romaji: 'Tā (t)', sound: 'トゥ', nonConn: false,
         forms: { iso: 'ت', init: 'تـ', med: 'ـتـ', fin: 'ـت' },
         tip: '英語の「t」に近い軽いタ行の音。お皿の上に点が2つ！',
         stroke: '「ب」と同じお皿を右から左へ描き、上に点を2つ打ちます。',
         exAr: 'تُفَّاح', exKana: 'トゥッファーフ', exJp: 'りんご' },
-      { id: 4, arName: 'ثَاء', char: 'ث', name: 'サー', romaji: 'Thā (th)', sound: 'ス（舌をはさむ）', nonConn: false,
+      { id: 4, mp3: '4_thaa.mp3', arName: 'ثَاء', char: 'ث', name: 'サー', romaji: 'Thā (th)', sound: 'ス（舌をはさむ）', nonConn: false,
         forms: { iso: 'ث', init: 'ثـ', med: 'ـثـ', fin: 'ـث' },
         tip: '英語の「thank」の th と同じ音。お皿の上に点が3つ！',
         stroke: 'お皿を描き、上に三角形に点を3つ打ちます。',
         exAr: 'ثَلْج', exKana: 'サルジュ', exJp: '雪' },
-      { id: 5, arName: 'جِيم', char: 'ج', name: 'ジーム', romaji: 'Jīm (j)', sound: 'ジュ', nonConn: false,
+      { id: 5, mp3: '5_jeem.mp3', arName: 'جِيم', char: 'ج', name: 'ジーム', romaji: 'Jīm (j)', sound: 'ジュ', nonConn: false,
         forms: { iso: 'ج', init: 'جـ', med: 'ـجـ', fin: 'ـج' },
         tip: '英語の「j」（ジャ・ジュ）の音。お腹の中に点が1つあります。',
         stroke: '上の波線を描いてから下に大きくC字に丸め、真ん中に点を1つ。',
         exAr: 'جَمَل', exKana: 'ジャマル', exJp: 'ラクダ' },
-      { id: 6, arName: 'حَاء', char: 'ح', name: 'ハー', romaji: 'Ḥā (ḥ)', sound: 'ハ（息を強く）', nonConn: false,
+      { id: 6, mp3: '6_haa.mp3', arName: 'حَاء', char: 'ح', name: 'ハー', romaji: 'Ḥā (ḥ)', sound: 'ハ（息を強く）', nonConn: false,
         forms: { iso: 'ح', init: 'حـ', med: 'ـحـ', fin: 'ـح' },
         tip: '寒い日に手に息を「ハァーッ」と吹きかけるときの、喉をしめた強いH。点はありません。',
         stroke: '「ج」と同じ形で、点をつけないのが特徴です。',
         exAr: 'حَلِيب', exKana: 'ハリーブ', exJp: '牛乳' },
-      { id: 7, arName: 'خَاء', char: 'خ', name: 'ハー（喉）', romaji: 'Khā (kh)', sound: 'ハ（喉を鳴らす）', nonConn: false,
+      { id: 7, mp3: '7_khaa.mp3', arName: 'خَاء', char: 'خ', name: 'ハー（喉）', romaji: 'Khā (kh)', sound: 'ハ（喉を鳴らす）', nonConn: false,
         forms: { iso: 'خ', init: 'خـ', med: 'ـخـ', fin: 'ـخ' },
         tip: 'うがいをするときのように喉の奥を震わせる「kh」の音。上に点が1つ！',
         stroke: '「ح」と同じ形を描き、頭の上に点を1つ打ちます。',
         exAr: 'خُبْز', exKana: 'フブズ', exJp: 'パン' },
-      { id: 8, arName: 'دَال', char: 'د', name: 'ダール', romaji: 'Dāl (d)', sound: 'ドゥ', nonConn: true,
+      { id: 8, mp3: '8_daal.mp3', arName: 'دَال', char: 'د', name: 'ダール', romaji: 'Dāl (d)', sound: 'ドゥ', nonConn: true,
         forms: { iso: 'د', init: 'د', med: 'ـد', fin: 'ـد' },
         tip: '日本語のダ行と同じ「d」の音。左隣とはつなぎません。',
         stroke: '上から右下へ斜めに下ろし、左へ短く払います。',
         exAr: 'دَرْس', exKana: 'ダルス', exJp: '授業・レッスン' },
-      { id: 9, arName: 'ذَال', char: 'ذ', name: 'ザール', romaji: 'Dhāl (dh)', sound: 'ズ（舌をはさむ）', nonConn: true,
+      { id: 9, mp3: '9_zaal.mp3', arName: 'ذَال', char: 'ذ', name: 'ザール', romaji: 'Dhāl (dh)', sound: 'ズ（舌をはさむ）', nonConn: true,
         forms: { iso: 'ذ', init: 'ذ', med: 'ـذ', fin: 'ـذ' },
         tip: '英語の「this」の th（濁る音）。「د」に点が1つ。左隣とはつなぎません。',
         stroke: '「د」と同じ形を描き、上に点を1つ打ちます。',
         exAr: 'ذَهَب', exKana: 'ザハブ', exJp: '金（ゴールド）' },
-      { id: 10, arName: 'رَاء', char: 'ر', name: 'ラー', romaji: 'Rā (r)', sound: 'ル（巻き舌）', nonConn: true,
+      { id: 10, mp3: '10_raa.mp3', arName: 'رَاء', char: 'ر', name: 'ラー', romaji: 'Rā (r)', sound: 'ル（巻き舌）', nonConn: true,
         forms: { iso: 'ر', init: 'ر', med: 'ـر', fin: 'ـر' },
         tip: 'スペイン語やイタリア語のような軽い巻き舌の「r」。左隣とはつなぎません。',
         stroke: '右から左下へすべり台のように滑らかにカーブさせます。',
         exAr: 'رَمْل', exKana: 'ラムル', exJp: '砂' },
-      { id: 11, arName: 'زَاي', char: 'ز', name: 'ザーイ', romaji: 'Zāy (z)', sound: 'ズ', nonConn: true,
+      { id: 11, mp3: '11_zaa.mp3', arName: 'زَاي', char: 'ز', name: 'ザーイ', romaji: 'Zāy (z)', sound: 'ズ', nonConn: true,
         forms: { iso: 'ز', init: 'ز', med: 'ـز', fin: 'ـز' },
         tip: '英語の「zoo」の z の音。「ر」に点が1つ。左隣とはつなぎません。',
         stroke: '「ر」と同じすべり台を描き、上に点を1つ打ちます。',
         exAr: 'زَهْرَة', exKana: 'ザフラ', exJp: '花' },
-      { id: 12, arName: 'سِين', char: 'س', name: 'スィーン', romaji: 'Sīn (s)', sound: 'ス', nonConn: false,
+      { id: 12, mp3: '12_seen.mp3', arName: 'سِين', char: 'س', name: 'スィーン', romaji: 'Sīn (s)', sound: 'ス', nonConn: false,
         forms: { iso: 'س', init: 'سـ', med: 'ـسـ', fin: 'ـس' },
         tip: '英語の「sun」と同じ爽やかな「s」の音。小さな山が2つ＋大きなお椀！',
         stroke: '右から小さなカーブを2つ描き、最後に大きく下へ丸く払います。',
         exAr: 'سَلَام', exKana: 'サラーム', exJp: '平和' },
-      { id: 13, arName: 'شِين', char: 'ش', name: 'シーン', romaji: 'Shīn (sh)', sound: 'シュ', nonConn: false,
+      { id: 13, mp3: '13_sheen.mp3', arName: 'شِين', char: 'ش', name: 'シーン', romaji: 'Shīn (sh)', sound: 'シュ', nonConn: false,
         forms: { iso: 'ش', init: 'شـ', med: 'ـشـ', fin: 'ـش' },
         tip: '日本語のシャ・シュと同じ「sh」の音。「س」の上に点が3つ！',
         stroke: '「س」と同じ形を描き、山の上に点を3つ打ちます。',
         exAr: 'شَمْس', exKana: 'シャムス', exJp: '太陽' },
-      { id: 14, arName: 'صَاد', char: 'ص', name: 'サード', romaji: 'Ṣād (ṣ)', sound: 'ス（こもった音）', nonConn: false,
+      { id: 14, mp3: '14_saad.mp3', arName: 'صَاد', char: 'ص', name: 'サード', romaji: 'Ṣād (ṣ)', sound: 'ス（こもった音）', nonConn: false,
         forms: { iso: 'ص', init: 'صـ', med: 'ـصـ', fin: 'ـص' },
         tip: '口の中を広くして、低く響かせる「s」の音（強調音）。',
         stroke: '右へループを描いて戻り、左に大きなお椀を続けます。',
         exAr: 'صَبَاح', exKana: 'サバーフ', exJp: '朝' },
-      { id: 15, arName: 'ضَاد', char: 'ض', name: 'ダード', romaji: 'Ḍād (ḍ)', sound: 'ドゥ（こもった音）', nonConn: false,
+      { id: 15, mp3: '15_daad.mp3', arName: 'ضَاد', char: 'ض', name: 'ダード', romaji: 'Ḍād (ḍ)', sound: 'ドゥ（こもった音）', nonConn: false,
         forms: { iso: 'ض', init: 'ضـ', med: 'ـضـ', fin: 'ـض' },
         tip: 'アラビア語特有の深い「d」の音。「ص」の上に点が1つ。',
         stroke: '「ص」と同じ形を描き、ループの上に点を1つ打ちます。',
         exAr: 'ضَوْء', exKana: 'ダウ', exJp: '光' },
-      { id: 16, arName: 'طَاء', char: 'ط', name: 'ター（強調）', romaji: 'Ṭā (ṭ)', sound: 'トゥ（こもった音）', nonConn: false,
+      { id: 16, mp3: '16_taah.mp3', arName: 'طَاء', char: 'ط', name: 'ター（強調）', romaji: 'Ṭā (ṭ)', sound: 'トゥ（こもった音）', nonConn: false,
         forms: { iso: 'ط', init: 'طـ', med: 'ـطـ', fin: 'ـط' },
         tip: '口の中を広げて発音する太い「t」の音。縦棒が目印！',
         stroke: '横にループを描いたあと、上から縦棒を下ろして合流させます。',
         exAr: 'طَعَام', exKana: 'タアーム', exJp: '食べ物' },
-      { id: 17, arName: 'ظَاء', char: 'ظ', name: 'ザー（強調）', romaji: 'Ẓā (ẓ)', sound: 'ズ（こもった音）', nonConn: false,
+      { id: 17, mp3: '17_zhaa.mp3', arName: 'ظَاء', char: 'ظ', name: 'ザー（強調）', romaji: 'Ẓā (ẓ)', sound: 'ズ（こもった音）', nonConn: false,
         forms: { iso: 'ظ', init: 'ظـ', med: 'ـظـ', fin: 'ـظ' },
         tip: '舌をはさみながら深く響かせる「dh」の音。「ط」に点が1つ。',
         stroke: '「ط」と同じ形を描き、ループの右上に点を1つ打ちます。',
         exAr: 'ظِلّ', exKana: 'ズィッル', exJp: '影' },
-      { id: 18, arName: 'عَيْن', char: 'ع', name: 'アイン', romaji: 'ʿAyn (ʿ)', sound: 'ア（喉をしめる）', nonConn: false,
+      { id: 18, mp3: '18_ain.mp3', arName: 'عَيْن', char: 'ع', name: 'アイン', romaji: 'ʿAyn (ʿ)', sound: 'ア（喉をしめる）', nonConn: false,
         forms: { iso: 'ع', init: 'عـ', med: 'ـعـ', fin: 'ـع' },
         tip: 'アラビア語らしさNo.1！喉の奥をぐっとしめて出す独特の「ア」の音。',
         stroke: '数字の3を逆向きにしたように、上の小さなCと下の大きなCをつなげます。',
         exAr: 'عَرَبِيّ', exKana: 'アラビー', exJp: 'アラビア語・アラブの' },
-      { id: 19, arName: 'غَيْن', char: 'غ', name: 'ガイン', romaji: 'Ghayn (gh)', sound: 'グ（フランス語のR風）', nonConn: false,
+      { id: 19, mp3: '19_ghain.mp3', arName: 'غَيْن', char: 'غ', name: 'ガイン', romaji: 'Ghayn (gh)', sound: 'グ（フランス語のR風）', nonConn: false,
         forms: { iso: 'غ', init: 'غـ', med: 'ـغـ', fin: 'ـغ' },
         tip: 'フランス語のRや、喉の奥でうがいする濁音「gh」。「ع」に点が1つ。',
         stroke: '「ع」と同じ形を描き、頭の上に点を1つ打ちます。',
         exAr: 'غَيْم', exKana: 'ガイム', exJp: '雲' },
-      { id: 20, arName: 'فَاء', char: 'ف', name: 'ファー', romaji: 'Fā (f)', sound: 'フ', nonConn: false,
+      { id: 20, mp3: '20_faa.mp3', arName: 'فَاء', char: 'ف', name: 'ファー', romaji: 'Fā (f)', sound: 'フ', nonConn: false,
         forms: { iso: 'ف', init: 'فـ', med: 'ـفـ', fin: 'ـف' },
         tip: '英語の「f」と同じく、上の歯で下唇を軽く噛んで息を出す音。点1つ。',
         stroke: '右上に小さな丸を描き、そのまま左へ浅いお皿を伸ばし、上に点1つ。',
         exAr: 'فِنْجَان', exKana: 'フィンジャーン', exJp: 'カップ' },
-      { id: 21, arName: 'قَاف', char: 'ق', name: 'カーフ（喉）', romaji: 'Qāf (q)', sound: 'ク（喉の奥）', nonConn: false,
+      { id: 21, mp3: '21_qaaf.mp3', arName: 'قَاف', char: 'ق', name: 'カーフ（喉）', romaji: 'Qāf (q)', sound: 'ク（喉の奥）', nonConn: false,
         forms: { iso: 'ق', init: 'قـ', med: 'ـقـ', fin: 'ـق' },
         tip: '「k」よりさらに喉の奥で発音する深い「q」の音。上に点が2つ！',
         stroke: '右上に小さな丸を描き、深く丸いお椀へつなげ、上に点2つ。',
         exAr: 'قَمَر', exKana: 'カマル', exJp: '月' },
-      { id: 22, arName: 'كَاف', char: 'ك', name: 'カーフ', romaji: 'Kāf (k)', sound: 'ク', nonConn: false,
+      { id: 22, mp3: '22_kaaf.mp3', arName: 'كَاف', char: 'ك', name: 'カーフ', romaji: 'Kāf (k)', sound: 'ク', nonConn: false,
         forms: { iso: 'ك', init: 'كـ', med: 'ـكـ', fin: 'ـك' },
         tip: '日本語のカ行と同じ「k」の音。独立形と語頭形で形が変わるのが面白い！',
         stroke: '上からL字のように左へ伸ばし、内側に小さなS字マークを書きます。',
         exAr: 'كِتَاب', exKana: 'キターブ', exJp: '本' },
-      { id: 23, arName: 'لَام', char: 'ل', name: 'ラーム', romaji: 'Lām (l)', sound: 'ル（L）', nonConn: false,
+      { id: 23, mp3: '23_laam.mp3', arName: 'لَام', char: 'ل', name: 'ラーム', romaji: 'Lām (l)', sound: 'ル（L）', nonConn: false,
         forms: { iso: 'ل', init: 'لـ', med: 'ـلـ', fin: 'ـل' },
         tip: '英語の「L」の音。アリフと似ていますが、左隣と手をつなぎます！',
         stroke: '上からまっすぐ下ろし、下で丸く左へ跳ね上げます（釣り針の形）。',
         exAr: 'لَيْل', exKana: 'ライル', exJp: '夜' },
-      { id: 24, arName: 'مِيم', char: 'م', name: 'ミーム', romaji: 'Mīm (m)', sound: 'ム', nonConn: false,
+      { id: 24, mp3: '24_meem.mp3', arName: 'مِيم', char: 'م', name: 'ミーム', romaji: 'Mīm (m)', sound: 'ム', nonConn: false,
         forms: { iso: 'م', init: 'مـ', med: 'ـمـ', fin: 'ـم' },
         tip: '日本語のマ行と同じ「m」の音。丸い頭と下に垂れるしっぽが特徴。',
         stroke: '小さな丸を描いて左へ少し伸ばし、そのまま下へまっすぐ下ろします。',
         exAr: 'مَاء', exKana: 'マー', exJp: '水' },
-      { id: 25, arName: 'نُون', char: 'ن', name: 'ヌーン', romaji: 'Nūn (n)', sound: 'ン・ヌ', nonConn: false,
+      { id: 25, mp3: '25_noon.mp3', arName: 'نُون', char: 'ن', name: 'ヌーン', romaji: 'Nūn (n)', sound: 'ン・ヌ', nonConn: false,
         forms: { iso: 'ن', init: 'نـ', med: 'ـنـ', fin: 'ـن' },
         tip: '日本語のナ行・ンと同じ「n」の音。深いお椀の中に点が1つ！',
         stroke: '右から下へ深いお椀を描き、内側に点を1つ打ちます。',
         exAr: 'نَجْم', exKana: 'ナジュム', exJp: '星' },
-      { id: 26, arName: 'هَاء', char: 'ه', name: 'ハー（軽）', romaji: 'Hā (h)', sound: 'ハ', nonConn: false,
+      { id: 26, mp3: '26_haah.mp3', arName: 'هَاء', char: 'ه', name: 'ハー（軽）', romaji: 'Hā (h)', sound: 'ハ', nonConn: false,
         forms: { iso: 'ه', init: 'هـ', med: 'ـهـ', fin: 'ـه' },
         tip: '日本語のハ行と同じ軽い「h」の音。独立形は可愛い丸形！',
         stroke: 'しずく型や丸をひと筆でくるっと描きます。',
         exAr: 'هَدِيَّة', exKana: 'ハディーヤ', exJp: 'プレゼント' },
-      { id: 27, arName: 'وَاو', char: 'و', name: 'ワーウ', romaji: 'Wāw (w / ū)', sound: 'ウ・ワ', nonConn: true,
+      { id: 27, mp3: '27_waw.mp3', arName: 'وَاو', char: 'و', name: 'ワーウ', romaji: 'Wāw (w / ū)', sound: 'ウ・ワ', nonConn: true,
         forms: { iso: 'و', init: 'و', med: 'ـو', fin: 'ـو' },
         tip: '「w」の音と、長い「ウー」の音。数字の9に似た形。左隣とはつなぎません。',
         stroke: '小さな丸を描き、そのまま左下へすべり台のように払います。',
         exAr: 'وَرْد', exKana: 'ワルド', exJp: 'バラ' },
-      { id: 28, arName: 'يَاء', char: 'ي', name: 'ヤー', romaji: 'Yā (y / ī)', sound: 'イ・ヤ', nonConn: false,
+      { id: 28, mp3: '30_yaa.mp3', arName: 'يَاء', char: 'ي', name: 'ヤー', romaji: 'Yā (y / ī)', sound: 'イ・ヤ', nonConn: false,
         forms: { iso: 'ي', init: 'يـ', med: 'ـيـ', fin: 'ـي' },
         tip: '「y」の音と、長い「イー」の音。下に点が2つ並ぶのが目印！',
         stroke: '右からS字のようにうねらせて下のお椀を描き、下に点を2つ打ちます。',
@@ -1235,59 +1235,90 @@
       }
     }
 
-    function playOnlineArabicTTS(text, fallbackLabel) {
-      const url = 'https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&q=' + encodeURIComponent(text);
-      try {
-        if (activeAudioEl) {
-          try { activeAudioEl.pause(); activeAudioEl.currentTime = 0; } catch (e) {}
-        }
-        let audio = ttsAudioCache.get(text);
-        if (!audio) {
-          audio = new Audio();
-          audio.referrerPolicy = 'no-referrer';
-          audio.preload = 'auto';
-          audio.src = url;
-          ttsAudioCache.set(text, audio);
-        } else {
-          audio.currentTime = 0;
-        }
-        activeAudioEl = audio;
+    const LETTER_AUDIO_CDN = 'https://cdn.jsdelivr.net/gh/adnan/Arabic-Alphabet@master/sounds/';
 
-        let settled = false;
-        const failOnce = () => {
-          if (settled) return;
-          settled = true;
-          ttsAudioCache.delete(text);
-          speakKanaFallback(fallbackLabel);
-        };
-
-        const timer = setTimeout(() => {
-          if (!settled && audio.paused) failOnce();
-        }, 1600);
-
-        audio.onplaying = () => {
-          settled = true;
-          clearTimeout(timer);
-          if (fallbackLabel) showToast('🔊 アラビア語音声: ' + fallbackLabel);
-        };
-        audio.onerror = () => {
-          clearTimeout(timer);
-          failOnce();
-        };
-
-        const p = audio.play();
-        if (p && typeof p.catch === 'function') {
-          p.catch(() => {
-            clearTimeout(timer);
-            failOnce();
-          });
-        }
-      } catch (e) {
-        speakKanaFallback(fallbackLabel);
+    function playAudioUrlSequence(urls, fallbackLabel, onAllFailed) {
+      if (!urls || urls.length === 0) {
+        if (onAllFailed) onAllFailed();
+        return;
       }
+      const tryIndex = (idx) => {
+        if (idx >= urls.length) {
+          if (onAllFailed) onAllFailed();
+          return;
+        }
+        const url = urls[idx];
+        try {
+          if (activeAudioEl) {
+            try { activeAudioEl.pause(); activeAudioEl.currentTime = 0; } catch (e) {}
+          }
+          let audio = ttsAudioCache.get(url);
+          if (!audio) {
+            audio = new Audio();
+            audio.referrerPolicy = 'no-referrer';
+            audio.preload = 'auto';
+            audio.src = url;
+            ttsAudioCache.set(url, audio);
+          } else {
+            audio.currentTime = 0;
+          }
+          activeAudioEl = audio;
+
+          let settled = false;
+          const next = () => {
+            if (settled) return;
+            settled = true;
+            ttsAudioCache.delete(url);
+            tryIndex(idx + 1);
+          };
+
+          const timer = setTimeout(() => {
+            if (!settled && audio.paused) next();
+          }, 2200);
+
+          audio.onplaying = () => {
+            settled = true;
+            clearTimeout(timer);
+            if (fallbackLabel) showToast('🔊 アラビア語発音: ' + fallbackLabel);
+          };
+          audio.onerror = () => {
+            clearTimeout(timer);
+            next();
+          };
+
+          const p = audio.play();
+          if (p && typeof p.catch === 'function') {
+            p.catch(() => {
+              clearTimeout(timer);
+              next();
+            });
+          }
+        } catch (e) {
+          tryIndex(idx + 1);
+        }
+      };
+      tryIndex(0);
     }
 
-    function speakArabic(text, fallbackLabel) {
+    function stripArabicDiacritics(str) {
+      return (str || '').replace(/[\u064B-\u065F\u0670]/g, '');
+    }
+
+    function buildNativeArabicUrls(text, letterMp3) {
+      const urls = [];
+      if (letterMp3) {
+        urls.push(LETTER_AUDIO_CDN + letterMp3);
+      }
+      const plain = stripArabicDiacritics(text);
+      const q = encodeURIComponent(text);
+      const qp = encodeURIComponent(plain || text);
+      urls.push('https://translate.googleapis.com/translate_tts?client=gtx&ie=UTF-8&tl=ar&q=' + q);
+      urls.push('https://translate.google.com/translate_tts?ie=UTF-8&client=dict-chrome-ex&tl=ar&q=' + qp);
+      urls.push('https://dict.youdao.com/dictvoice?le=ar&audio=' + qp);
+      return urls;
+    }
+
+    function speakArabic(text, fallbackLabel, letterMp3) {
       if (!state.soundOn) {
         showToast('🔇 音声がOFFになっています（右上の音量ボタンでON）');
         return;
@@ -1295,25 +1326,48 @@
       getAudioCtx();
       refreshVoices();
 
+      // Explicit Kana reading mode
       if (state.voiceMode === 'kana') {
         sfxClick();
         speakKanaFallback(fallbackLabel || text);
         return;
       }
 
-      // 1. Prefer native Arabic voice installed on device
-      const arVoice = cachedVoices.find(v => v.lang && v.lang.toLowerCase().startsWith('ar'));
-      if (arVoice) {
-        sfxClick();
-        speakViaSynth(text, arVoice.lang || 'ar-SA', arVoice, () => {
-          playOnlineArabicTTS(text, fallbackLabel);
+      // 1. For the 28 Arabic letters: always prefer the real native MP3 recording on jsDelivr CDN first!
+      if (letterMp3) {
+        const urls = buildNativeArabicUrls(text, letterMp3);
+        playAudioUrlSequence(urls, fallbackLabel, () => {
+          const arVoice = cachedVoices.find(v => v.lang && v.lang.toLowerCase().startsWith('ar'));
+          if (arVoice) {
+            speakViaSynth(text, arVoice.lang || 'ar-SA', arVoice, () => {
+              sfxOudPluck();
+              showToast('⚠️ アラビア語音声を取得できませんでした（「音声: カナ」で読み上げ可）');
+            });
+          } else {
+            sfxOudPluck();
+            showToast('⚠️ アラビア語音声を取得できませんでした（「音声: カナ」で読み上げ可）');
+          }
         });
-        if (fallbackLabel) showToast('🔊 ' + fallbackLabel);
         return;
       }
 
-      // 2. Try online Arabic native TTS via <audio>, fallback to Japanese Kana TTS + Oud chime
-      playOnlineArabicTTS(text, fallbackLabel);
+      // 2. For words/phrases: prefer device native Arabic voice if installed, otherwise multi-source native Arabic audio
+      const arVoice = cachedVoices.find(v => v.lang && v.lang.toLowerCase().startsWith('ar'));
+      if (arVoice) {
+        speakViaSynth(text, arVoice.lang || 'ar-SA', arVoice, () => {
+          playAudioUrlSequence(buildNativeArabicUrls(text, null), fallbackLabel, () => {
+            sfxOudPluck();
+            showToast('⚠️ アラビア語音声を取得できませんでした（「音声: カナ」で読み上げ可）');
+          });
+        });
+        if (fallbackLabel) showToast('🔊 アラビア語発音: ' + fallbackLabel);
+        return;
+      }
+
+      playAudioUrlSequence(buildNativeArabicUrls(text, null), fallbackLabel, () => {
+        sfxOudPluck();
+        showToast('⚠️ アラビア語音声を取得できませんでした（「音声: カナ」で読み上げ可）');
+      });
     }
 
     // ==================== TOAST & REWARDS ====================
@@ -1541,7 +1595,7 @@
       `;
 
       // Attach detail card listeners
-      document.getElementById('btnDetailSpeak').addEventListener('click', () => speakArabic(current.arName || current.char, current.name + '（' + current.sound + '）'));
+      document.getElementById('btnDetailSpeak').addEventListener('click', () => speakArabic(current.arName || current.char, current.name + '（' + current.sound + '）', current.mp3));
       document.getElementById('btnDetailExSpeak').addEventListener('click', () => speakArabic(current.exAr, current.exKana));
       document.getElementById('btnDetailWrite').addEventListener('click', () => {
         writeLetterIdx = LETTERS.findIndex(l => l.id === current.id);
@@ -1589,7 +1643,7 @@
           btn.addEventListener('click', () => {
             selectedLetterId = Number(btn.dataset.letterId);
             const item = LETTERS.find(x => x.id === selectedLetterId);
-            if (item) speakArabic(item.arName || item.char, item.name + '（' + item.sound + '）');
+            if (item) speakArabic(item.arName || item.char, item.name + '（' + item.sound + '）', item.mp3);
             renderAlphabetTab();
           });
         });
@@ -1867,7 +1921,7 @@
             prompt: 'このアラビア文字の読み方は？',
             main: target.char,
             sub: '',
-            speakText: target.arName || target.char,
+            speakText: target.arName || target.char, speakMp3: target.mp3,
             explain: target.char + ' は「' + target.name + '（' + target.sound + '）」だよ！',
             options
           };
@@ -2279,7 +2333,7 @@
       });
       document.getElementById('btnWriteSpeak').addEventListener('click', () => {
         const l = LETTERS[writeLetterIdx] || LETTERS[0];
-        speakArabic(l.arName || l.char, l.name + '（' + l.sound + '）');
+        speakArabic(l.arName || l.char, l.name + '（' + l.sound + '）', l.mp3);
       });
       document.getElementById('btnToggleGuide').addEventListener('click', () => {
         writeGuideOn = !writeGuideOn;
@@ -2363,7 +2417,7 @@
       });
       document.getElementById('btnQuizSpeak').addEventListener('click', () => {
         const q = quizState.questions[quizState.index];
-        if (q) speakArabic(q.speakText, q.sub || q.main);
+        if (q) speakArabic(q.speakText, q.sub || q.main, q.speakMp3 || null);
       });
       document.getElementById('btnQuizNext').addEventListener('click', () => {
         if (quizState.index + 1 >= quizState.questions.length) {
